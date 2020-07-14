@@ -1,26 +1,3 @@
-# Required to run your project under the correct environment.
-
 language: php
-
-# Versions of PHP you want your project run with.
-
 php:
  - 7.2
- Project language
- 
-# Update composer
-before-install:
- - composer self-update
-
-# Install composer dependencies,
-# Create database, schema and fixtures
-install:
- - composer install
- - cp app/config/parameters.yml.dist app/config/parameters.yml
- - php bin/console doctrine:database:create --env=test
- - php bin/console doctrine:schema:create --env=test
- - php bin/console doctrine:fixtures:load -n --env=test
-
-# Run script
-script:
- - phpunit index.php
