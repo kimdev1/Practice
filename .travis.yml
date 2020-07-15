@@ -5,10 +5,4 @@ jdk:
 branches:
   only:
     - master #사용할 branch
-    
-cache: #gradle 사용 관련 설정
-  directories:
-    - '$HOME/.m2/repository'
-    - '$HOME/.gradle'
 
-script: "./gradlew clean build"
