@@ -2,6 +2,7 @@ dist: trusty
 Sudo: required
 language:
   - c
+  -
 compiler:
   - gcc
 addons:
