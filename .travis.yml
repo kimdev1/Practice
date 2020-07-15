@@ -1,8 +1,1 @@
-language: java #사용언어
-jdk:
-  - openjdk8 #JDK버전
-
-branches:
-  only:
-    - master #사용할 branch
-
+language: c
