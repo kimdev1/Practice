@@ -1,8 +1,13 @@
+
 dist: trusty
+
 Sudo: required
+
+#travis configuration for coverage testing
 language:
   - c
-  -
+  
+# Compiler selection
 compiler:
   - gcc
 addons:
@@ -13,6 +18,8 @@ addons:
       - gcc-6
       - g++-6
       - cmake
+      
+# Build steps
 script:
   # Export CC and CXX to tell cmake which compiler to use
   - export CC=/usr/bin/gcc-6
