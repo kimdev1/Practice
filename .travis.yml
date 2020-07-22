@@ -6,7 +6,12 @@ Sudo: required
 #travis configuration for coverage testing
 language:
   - c
-  
+
+branches:
+  only:
+    # Change this to gh-pages if you're deploying using the gh-pages branch
+    - master
+    
 # Compiler selection
 compiler:
   - gcc
