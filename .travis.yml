@@ -1,12 +1,6 @@
 language: node_js
 node_js:
-  - 0.6
-  - 0.7
-before_install:
-  - npm install mocha -g
+  - 4.2
 branches:
   only:
     - master
-matrix:
-  allow_failures:
-    - node_js: 0.7
