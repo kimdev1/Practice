@@ -1,8 +1,3 @@
-language: node_js
-node_js:
-  - 4.2
-branches:
-  only:
-    - master
-scripts: 
-  - make test
+language: java
+before_install:
+  - chmod +x mvnw
